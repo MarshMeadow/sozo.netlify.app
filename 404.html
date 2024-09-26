@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sozo Anime App | 404 Not Found</title>
+    <meta property="og:url" content="/404" />
+    <meta property="og:title" content="Sozo | Page Not Found">
+    <meta property="og:description" content="The page you are looking for does not exist.">
+    <meta property="og:image" content="/images/logo.png">
+    <meta property="og:image:type" content="image/png">
+    <meta name="theme-color" content="#8d2249" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="/Images/logo.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('/Images/photo_2024-09-26_15-31-10_waifu2x_art_noise3_scale.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .mist {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('/Images/mist.png') repeat;
+            opacity: 0.5;
+            pointer-events: none;
+            z-index: 0;
+            animation: moveMist 60s linear infinite;
+        }
+
+        @keyframes moveMist {
+            0% { background-position: 0 0; }
+            100% { background-position: 100% 100%; }
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 90%;
+            width: 400px;
+            background-color: rgba(51, 51, 51, 0.8);
+            border-radius: 8px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #ddd;
+        }
+
+        .home-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #c83232; /* Light red theme */
+            border: 2px solid #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .home-link:hover {
+            background-color: #fff;
+            color: #c83232;
+        }
+    </style>
+</head>
+<body>
+    <div class="mist"></div>
+    <div class="container">
+        <h1>404 - Page Not Found</h1>
+        <p>Oops! The page you're looking for doesn't exist.</p>
+        <p>You will be redirected to the home page in 30 seconds.</p>
+        <a href="https://sozoapp.netlify.app" class="home-link">Go to Home Now</a>
+    </div>
+
+    <script>
+        // Redirect to home page after 30 seconds
+        setTimeout(function() {
+            window.location.href = "https://sozoapp.netlify.app";
+        }, 30000);
+    </script>
+</body>
+</html>
