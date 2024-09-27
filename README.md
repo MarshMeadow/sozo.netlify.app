@@ -16,14 +16,15 @@ Sozo is the ultimate anime app designed for enthusiasts to discover, track, and 
 
 ## Get Started with Sozo
 
-1. **Download the App:** [Download Now](link-to-download)
+1. **Download the App:** [Download Now](https://github.com/Sozo-app)
 2. **Create an Account:** Sign up to unlock all features.
 3. **Join the Community:** Connect with fellow anime lovers!
 
 ## Connect with Us
 
-- [Join our Discord](link-to-discord) 
-- [Follow us on Telegram](link-to-telegram)
+- [Join our Discord](https://discord.gg/n22URhYvMR) 
+- [Follow us on Telegram](t.me/SozoApp)
+- [Follow us on Telegram (2)](https://t.me/kitsune_app)
 
 ---
 
