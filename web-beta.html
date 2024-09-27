@@ -3,43 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OnStream - Light Red Theme</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>OnStream Dark Mode</title>
+    <style>
+        body {
+            background-color: #1a1a1a; /* Dark mode background */
+            color: #fff; /* White text for dark mode */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 3px solid #ff4d4d; /* Light red border */
+            border-radius: 8px;
+            background-color: #2a2a2a; /* Slightly lighter background for content */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff4d4d; /* Light red text for headers */
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        a {
+            color: #ff4d4d; /* Light red links */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">OnStream</div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Movies</a></li>
-                <li><a href="#">TV Shows</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section class="hero">
-            <h1>Watch Free Movies and TV Shows</h1>
-            <p>Stream thousands of free movies and TV shows, no sign-up required.</p>
-            <button>Get Started</button>
-        </section>
-
-        <section class="content">
-            <h2>Popular Now</h2>
-            <div class="movies-grid">
-                <!-- Movie cards go here -->
-                <div class="movie-card">Movie 1</div>
-                <div class="movie-card">Movie 2</div>
-                <div class="movie-card">Movie 3</div>
-                <div class="movie-card">Movie 4</div>
-            </div>
-        </section>
-    </main>
+    <div class="container">
+        <h1>Welcome to OnStream</h1>
+        <p>
+            Explore amazing content on <a href="https://onstream.so" target="_blank">OnStream</a>! 
+            Watch movies, TV shows, and more in dark mode with a light red aesthetic.
+        </p>
+    </div>
 
     <footer>
-        <p>&copy; 2024 OnStream. All rights reserved.</p>
+        &copy; 2024 Sozo. All rights reserved.
     </footer>
+
 </body>
 </html>
