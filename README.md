@@ -1,6 +1,6 @@
 # Sozo - Your Anime Companion
 
-![Sozo Logo]![147311591](https://github.com/user-attachments/assets/94a27b56-058a-437a-908e-4000b319ab46)
+[147311591](https://github.com/user-attachments/assets/94a27b56-058a-437a-908e-4000b319ab46)
 
 
 ## Welcome to Sozo
