@@ -25,7 +25,7 @@ Sozo is the ultimate anime app designed for enthusiasts to discover, track, and 
 ## Connect with Us
 
 - [Join our Discord](https://discord.gg/n22URhYvMR) 
-- [Follow us on Telegram]([t.me/SozoApp](https://t.me/SozoApp))
+- [Follow us on Telegram]([https://t.me/SozoApp)
 - [Follow us on Telegram (2)](https://t.me/kitsune_app)
 
 ---
