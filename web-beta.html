@@ -44,10 +44,52 @@
             text-decoration: underline;
         }
 
+        /* Footer Section */
         footer {
-            text-align: center;
-            padding: 20px;
+            background-color: #131313; /* Darker footer background */
+            padding: 50px 0;
             color: #fff;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .footer-logo {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .footer-text {
+            margin: 10px 0;
+        }
+
+        .app-links {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 20px 0;
+        }
+
+        .app-links a {
+            background-color: #6b9621; /* Similar green button */
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .app-links a.disabled {
+            background-color: #4f4f4f; /* Disabled color for unavailable apps */
+        }
+
+        .app-links a:hover {
+            background-color: #83b53f; /* Hover effect for active buttons */
+        }
+
+        .footer-bottom {
+            margin-top: 40px;
+            font-size: 12px;
+            color: #999;
         }
     </style>
 </head>
@@ -62,7 +104,19 @@
     </div>
 
     <footer>
-        &copy; 2024 Sozo. All rights reserved.
+        <div class="footer-logo">Sozo App</div>
+        <p class="footer-text">Watch your favorite anime shows on any device in high quality.</p>
+
+        <div class="app-links">
+            <a href="#">Sozo for Android TV</a>
+            <a href="#">Sozo for Android</a>
+            <a class="disabled" href="#">Sozo for iOS (Coming Soon)</a>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2024 Sozo. All rights reserved. <br>
+            Related apps: AnimeBox, CrunchyWatch, FunAnime
+        </div>
     </footer>
 
 </body>
