@@ -31,3 +31,7 @@ Sozo is the ultimate anime app designed for enthusiasts to discover, track, and 
 ---
 
 Thank you for visiting the Sozo website! Enjoy your anime journey!
+
+---
+
+> **Note:** This repository contains the source code for the Sozo website.
