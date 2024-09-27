@@ -6,21 +6,76 @@
     <title>Sozo App - Watch Anime in HD</title>
     <style>
         body {
-            background-color: #1a1a1a; /* Dark mode background */
+            background-color: #1a1a1a; /* Fallback background */
             color: #fff; /* White text for dark mode */
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            overflow: hidden; /* Hide overflow to keep waves contained */
+            position: relative; /* Allow absolute positioning for waves */
+        }
+
+        .waves {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0; /* Send waves behind content */
+        }
+
+        .wave {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 200%;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            animation: wave-animation 5s infinite linear;
+        }
+
+        /* Creating multiple waves */
+        .wave:nth-child(1) {
+            animation-delay: 0s;
+            opacity: 0.5;
+        }
+        .wave:nth-child(2) {
+            animation-delay: 1s;
+            opacity: 0.4;
+            height: 60px; /* Make waves of varying heights */
+        }
+        .wave:nth-child(3) {
+            animation-delay: 2s;
+            opacity: 0.3;
+            height: 70px;
+        }
+        .wave:nth-child(4) {
+            animation-delay: 3s;
+            opacity: 0.6;
+            height: 50px;
+        }
+
+        @keyframes wave-animation {
+            0% {
+                transform: translateX(-50%) translateY(0);
+            }
+            100% {
+                transform: translateX(0) translateY(10px);
+            }
         }
 
         .container {
+            position: relative; /* Keep content above waves */
             max-width: 1200px;
             margin: 50px auto;
             padding: 20px;
             border: 3px solid #ff4d4d; /* Light red border */
             border-radius: 8px;
-            background-color: #2a2a2a; /* Slightly lighter background for content */
+            background-color: rgba(42, 42, 42, 0.9); /* Slightly transparent background for content */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            z-index: 1; /* Keep content above waves */
         }
 
         h1 {
@@ -40,7 +95,6 @@
             padding: 0;
         }
 
-        /* Styling for section titles on the left */
         .section-title {
             text-align: left;
             font-size: 24px;
@@ -124,6 +178,13 @@
 </head>
 <body>
 
+    <div class="waves">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+
     <div class="container">
         <h1>Sozo App - Free Anime in HD on Any Device</h1>
         <p>
@@ -192,8 +253,7 @@
         </div>
 
         <div class="footer-bottom">
-            &copy; 2024 Sozo. All rights reserved. <br>
-            Related apps: AnimeBox, CrunchyWatch, FunAnime
+            &copy; 2024 Sozo. All rights reserved.
         </div>
     </footer>
 
