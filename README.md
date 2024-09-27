@@ -1,8 +1,8 @@
 # Sozo - Your Anime Companion
 
-[Official Website](https://your-official-website-link) | [Support](https://your-support-link)
-
 ![147311591](https://github.com/user-attachments/assets/3e141d1e-c9ae-46ef-a308-3fb5e20fcdd9)
+
+[Official Website (Coming!)](https://your-official-website-link) | [Test Site](https://your-support-link)
 
 ## Welcome to Sozo
 
