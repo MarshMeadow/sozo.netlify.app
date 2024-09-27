@@ -12,7 +12,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            overflow: hidden; /* Hide overflow to keep waves contained */
+            overflow-x: hidden; /* Hide horizontal overflow */
             position: relative; /* Allow absolute positioning for waves */
         }
 
@@ -77,6 +77,7 @@
             background-color: rgba(42, 42, 42, 0.9); /* Slightly transparent background for content */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             z-index: 1; /* Keep content above waves */
+            overflow: hidden; /* Prevent overflow */
         }
 
         h1 {
@@ -151,6 +152,7 @@
             justify-content: center;
             gap: 40px;
             margin: 20px 0;
+            flex-wrap: wrap; /* Wrap links for smaller screens */
         }
 
         .app-links a {
@@ -174,6 +176,23 @@
             margin-top: 40px;
             font-size: 12px;
             color: #999;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+            .section-title {
+                font-size: 20px;
+            }
+            .button-download {
+                width: 80%; /* Adjust button width for mobile */
+            }
+            .app-links {
+                flex-direction: column; /* Stack app links on mobile */
+                gap: 10px;
+            }
         }
     </style>
 </head>
@@ -244,18 +263,14 @@
     </div>
 
     <footer>
-        <div class="footer-logo">Sozo App</div>
-        <p class="footer-text">Watch your favorite anime shows on any device in high quality.</p>
-
+        <div class="footer-logo">Sozo</div>
+        <div class="footer-text">Sozo - Watch free movies & TV shows online in HD on any device</div>
         <div class="app-links">
             <a href="#">Sozo for Android TV</a>
+            <a href="#" class="disabled">Sozo for iOS</a> <!-- Assuming this version is coming soon -->
             <a href="#">Sozo for Android</a>
-            <a class="disabled" href="#">Sozo for iOS (Coming Soon)</a>
         </div>
-
-        <div class="footer-bottom">
-            &copy; 2024 Sozo. All rights reserved.
-        </div>
+        <div class="footer-bottom">&copy; 2024 Sozo. All rights reserved.</div>
     </footer>
 
 </body>
