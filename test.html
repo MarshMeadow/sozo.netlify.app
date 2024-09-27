@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Azamov Website</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: lightcoral;
+            border: none;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="openWindow()">Open Azamov Website</button>
+
+    <script>
+        function openWindow() {
+            const width = 600; // Set width of the window
+            const height = 400; // Set height of the window
+            const left = (screen.width / 2) - (width / 2); // Center the window horizontally
+            const top = (screen.height / 2) - (height / 2); // Center the window vertically
+
+            window.open('https://azamov.me/', 'Azamov', `width=${width},height=${height},top=${top},left=${left}`);
+        }
+    </script>
+</body>
+</html>
