@@ -23,7 +23,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
 
-        h1, h2 {
+        h1 {
             text-align: center;
             color: #ff4d4d; /* Light red text for headers */
         }
@@ -38,6 +38,27 @@
         ul {
             list-style-type: none;
             padding: 0;
+        }
+
+        /* Styling for section titles on the left */
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            flex: 1;
+            max-width: 200px;
+            text-align: left;
+            font-size: 24px;
+            color: #ff4d4d;
+            padding-top: 10px;
+        }
+
+        .section-content {
+            flex: 3;
+            text-align: center;
         }
 
         .button-download {
@@ -117,35 +138,52 @@
         <a href="#" class="button-download">Download Sozo App</a>
         <p>* Scroll down for previous versions download</p>
 
-        <h2>What is Sozo?</h2>
-        <p>
-            Sozo is your gateway to the world of anime, providing a vast collection of shows and movies in HD, all available at your fingertips.
-        </p>
+        <!-- Section: What is Sozo -->
+        <div class="section">
+            <div class="section-title">What is Sozo?</div>
+            <div class="section-content">
+                <p>Sozo is your gateway to the world of anime, providing a vast collection of shows and movies in HD, all available at your fingertips.</p>
+            </div>
+        </div>
 
-        <h2>Why choose Sozo App for free anime?</h2>
-        <ul>
-            <li><strong>Free without registration</strong> - Sozo is totally free, and you can stream without even creating an account. No hidden fees, ever.</li>
-            <li><strong>Multi-subtitles</strong> - Watch anime from different countries with subtitles in various languages.</li>
-            <li><strong>Multiple server options</strong> - Enjoy smooth streaming with multiple server choices, including Torrent and others carefully selected.</li>
-            <li><strong>Download your favorites to watch offline</strong> - Save your favorite shows and movies to watch anytime, even without an internet connection.</li>
-            <li><strong>Custom favorite list</strong> - Keep track of the anime you love, ready to rewatch or share with your friends.</li>
-            <li><strong>Latest daily updates</strong> - Stay updated with the newest releases, so you're always in the know.</li>
-        </ul>
+        <!-- Section: Why choose Sozo App -->
+        <div class="section">
+            <div class="section-title">Why choose Sozo?</div>
+            <div class="section-content">
+                <ul>
+                    <li><strong>Free without registration</strong> - Sozo is totally free, and you can stream without even creating an account. No hidden fees, ever.</li>
+                    <li><strong>Multi-subtitles</strong> - Watch anime from different countries with subtitles in various languages.</li>
+                    <li><strong>Multiple server options</strong> - Enjoy smooth streaming with multiple server choices, including Torrent and others carefully selected.</li>
+                    <li><strong>Download your favorites to watch offline</strong> - Save your favorite shows and movies to watch anytime, even without an internet connection.</li>
+                    <li><strong>Custom favorite list</strong> - Keep track of the anime you love, ready to rewatch or share with your friends.</li>
+                    <li><strong>Latest daily updates</strong> - Stay updated with the newest releases, so you're always in the know.</li>
+                </ul>
+            </div>
+        </div>
 
-        <h2>Is the Sozo App safe?</h2>
-        <p>
-            Absolutely. The Sozo App is free from viruses and malware. Your security and privacy are a priority.
-        </p>
+        <!-- Section: Is Sozo App safe? -->
+        <div class="section">
+            <div class="section-title">Is Sozo App safe?</div>
+            <div class="section-content">
+                <p>Absolutely. The Sozo App is free from viruses and malware. Your security and privacy are a priority.</p>
+            </div>
+        </div>
 
-        <h2>How to install the Sozo App on your device?</h2>
-        <p>
-            Installing the Sozo App is quick and simple. Click the download button above, and follow the instructions for your device.
-        </p>
+        <!-- Section: How to install Sozo App -->
+        <div class="section">
+            <div class="section-title">How to install Sozo?</div>
+            <div class="section-content">
+                <p>Installing the Sozo App is quick and simple. Click the download button above, and follow the instructions for your device.</p>
+            </div>
+        </div>
 
-        <h2>Is Sozo available for PC?</h2>
-        <p>
-            Yes, you can install the Sozo App on your PC through an Android emulator. Simply download the app and use an emulator to enjoy your anime on a bigger screen.
-        </p>
+        <!-- Section: Is Sozo available for PC? -->
+        <div class="section">
+            <div class="section-title">Is Sozo available for PC?</div>
+            <div class="section-content">
+                <p>Yes, you can install the Sozo App on your PC through an Android emulator. Simply download the app and use an emulator to enjoy your anime on a bigger screen.</p>
+            </div>
+        </div>
     </div>
 
     <footer>
