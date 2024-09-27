@@ -34,36 +34,52 @@
             height: 50px;
             background: rgba(255, 255, 255, 0.5);
             border-radius: 50%;
-            animation: wave-animation 5s infinite linear;
+            animation: wave-animation 10s infinite linear;
         }
 
         /* Creating multiple waves */
         .wave:nth-child(1) {
             animation-delay: 0s;
             opacity: 0.5;
+            transform: translateX(-50%);
         }
         .wave:nth-child(2) {
             animation-delay: 1s;
             opacity: 0.4;
             height: 60px; /* Make waves of varying heights */
+            transform: translateX(-50%);
         }
         .wave:nth-child(3) {
             animation-delay: 2s;
             opacity: 0.3;
             height: 70px;
+            transform: translateX(-50%);
         }
         .wave:nth-child(4) {
             animation-delay: 3s;
             opacity: 0.6;
             height: 50px;
+            transform: translateX(-50%);
+        }
+        .wave:nth-child(5) {
+            animation-delay: 4s;
+            opacity: 0.5;
+            height: 65px;
+            transform: translateX(-50%);
+        }
+        .wave:nth-child(6) {
+            animation-delay: 5s;
+            opacity: 0.4;
+            height: 55px;
+            transform: translateX(-50%);
         }
 
         @keyframes wave-animation {
             0% {
-                transform: translateX(-50%) translateY(0);
+                transform: translate(-50%, 0);
             }
             100% {
-                transform: translateX(0) translateY(10px);
+                transform: translate(-50%, 10px);
             }
         }
 
@@ -82,14 +98,19 @@
 
         .banner {
             width: 100%;
-            max-height: 300px; /* Adjust the height of the banner */
+            max-height: 150px; /* Adjust the height of the banner */
             overflow: hidden; /* Hide overflow */
             margin-bottom: 20px; /* Space below the banner */
+            position: relative; /* Position for centering */
         }
 
         .banner img {
-            width: 100%; /* Make image responsive */
-            height: auto; /* Maintain aspect ratio */
+            width: auto; /* Maintain aspect ratio */
+            height: 150px; /* Fixed height for the banner */
+            position: absolute;
+            left: 50%; /* Center the image */
+            top: 50%; /* Center the image */
+            transform: translate(-50%, -50%); /* Adjust to center */
         }
 
         h1 {
@@ -215,6 +236,8 @@
         <div class="wave"></div>
         <div class="wave"></div>
         <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
     </div>
 
     <div class="container">
@@ -245,9 +268,9 @@
                     <li><strong>Free without registration</strong> - Sozo is totally free, and you can stream without even creating an account. No hidden fees, ever.</li>
                     <li><strong>Multi-subtitles</strong> - Watch anime from different countries with subtitles in various languages.</li>
                     <li><strong>Multiple server options</strong> - Enjoy smooth streaming with multiple server choices, including Torrent and others carefully selected.</li>
-                    <li><strong>Download your favorites to watch offline</strong> - Save your favorite shows and movies to watch anytime, even without an internet connection.</li>
-                    <li><strong>Custom favorite list</strong> - Keep track of the anime you love, ready to rewatch or share with your friends.</li>
-                    <li><strong>Latest daily updates</strong> - Stay updated with the newest releases, so you're always in the know.</li>
+                    <li><strong>Download your favorites</strong> - Save shows and movies to watch offline, anywhere, anytime.</li>
+                    <li><strong>Custom favorite list</strong> - Keep track of your favorite shows and share them with friends.</li>
+                    <li><strong>Latest daily updates</strong> - Stay updated with new releases and episodes daily.</li>
                 </ul>
             </div>
         </div>
@@ -256,7 +279,7 @@
         <div class="section">
             <div class="section-title">Is Sozo App safe?</div>
             <div class="section-content">
-                <p>Absolutely. The Sozo App is free from viruses and malware. Your security and privacy are a priority.</p>
+                <p>Absolutely! Sozo is completely safe to use and regularly updated for your security.</p>
             </div>
         </div>
 
@@ -264,7 +287,7 @@
         <div class="section">
             <div class="section-title">How to install Sozo App?</div>
             <div class="section-content">
-                <p>Installing Sozo is easy! Just download the app and follow the simple installation instructions on your device.</p>
+                <p>Installing Sozo is easy! Just download the app and follow the simple installation instructions for your device.</p>
             </div>
         </div>
 
@@ -279,7 +302,7 @@
 
     <footer>
         <div class="footer-logo">Sozo</div>
-        <div class="footer-text">Sozo - Watch free movies & TV shows online in HD on any device</div>
+        <div class="footer-text">Sozo - Watch free anime & TV shows online in HD on any device</div>
         <div class="app-links">
             <a href="#">Sozo for Android TV</a>
             <a href="#" class="disabled">Sozo for iOS</a> <!-- Assuming this version is coming soon -->
