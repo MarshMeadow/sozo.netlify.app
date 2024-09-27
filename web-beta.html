@@ -90,7 +90,7 @@
             padding: 20px;
             border: 3px solid #ff4d4d; /* Light red border */
             border-radius: 8px;
-            background-color: rgba(42, 42, 42, 0.9); /* Slightly transparent background for content */
+            background-color: rgba(42, 42, 42, 0.8); /* Slightly transparent background for content */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             z-index: 1; /* Keep content above waves */
             overflow: hidden; /* Prevent overflow */
@@ -164,11 +164,13 @@
         }
 
         footer {
-            background-color: #131313; /* Darker footer background */
+            background-color: rgba(19, 19, 19, 0.8); /* Semi-transparent footer background */
             padding: 50px 0;
             color: #fff;
             text-align: center;
             font-size: 14px;
+            position: relative; /* Ensure footer is on top */
+            z-index: 1; /* Keep footer above waves */
         }
 
         .footer-logo {
@@ -267,7 +269,7 @@
                 <ul>
                     <li><strong>Free without registration</strong> - Sozo is totally free, and you can stream without even creating an account. No hidden fees, ever.</li>
                     <li><strong>Multi-subtitles</strong> - Watch anime from different countries with subtitles in various languages.</li>
-                    <li><strong>Multiple server options</strong> - Enjoy smooth streaming with multiple server choices, including Torrent and others carefully selected.</li>
+                    <li><strong>Multiple server options</strong> - Enjoy a smooth streaming experience with multiple server options available.</li>
                     <li><strong>Download your favorites</strong> - Save shows and movies to watch offline, anywhere, anytime.</li>
                     <li><strong>Custom favorite list</strong> - Keep track of your favorite shows and share them with friends.</li>
                     <li><strong>Latest daily updates</strong> - Stay updated with new releases and episodes daily.</li>
